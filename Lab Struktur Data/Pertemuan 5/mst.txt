@@ -1,0 +1,25 @@
+Minimum Spanning Tree
+=> sebuah graf berbobot yang terhubung (connected)
+
+/*
+    1. Menghubungkan semua vertex
+    2. Tanpa siklus (cycle)
+    3. Bobot totalnya paling kecil dari tree lainnya
+*/
+
+A. Tiga Algoritma MST
+1. Kruskal's Algorithm
+2. Prim's Algorithm
+3. Reversed-Delete Algorithm
+
+1. Reversed-Delete Algorithm
+- Urutkan bobot edge dari terbesar ke terkecil
+- Hapus edge terbesar jika penghapusan tidak membuat graf terputus (disconnected)
+
+2. Kruskal's Algorithm
+- Urutkan bobot edge dari terkecil ke terbesar
+- Tambahkan edge terkecil jika penambahan tidak membuat siklus (cycle)
+
+3. Prim's Algorithm
+- Mulai dari satu vertex sembarang
+- Tambahkan edge terkecil yang menghubungkan vertex di dalam tree dengan vertex yang belum dihungkan
