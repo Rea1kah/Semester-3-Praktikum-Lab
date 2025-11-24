@@ -1,0 +1,22 @@
+ALgoritma Dijkstra adalah algoritma yang digunakan untuk menemukan jalur terpendek dari satu titik ke titik lainnya dalam sebuah graf berbobot. Algoritma ini bekerja dengan cara mengunjungi node-node dalam graf dan memperbarui jarak terpendek yang diketahui dari node awal ke setiap node lainnya.
+
+Berikut adalah langkah-langkah dasar dari algoritma Dijkstra:
+1. Inisialisasi: Tetapkan jarak awal dari node sumber ke dirinya sendiri sebagai
+    0 dan jarak ke semua node lainnya sebagai tak terhingga. Buat sebuah set untuk menyimpan node yang telah dikunjungi.
+2. Pilih Node Terdekat: Dari node yang belum dikunjungi, pilih node dengan jarak terpendek dari node sumber.
+3. Perbarui Jarak: Untuk setiap tetangga dari node terpilih,
+    hitung jarak baru dari node sumber ke tetangga tersebut melalui node terpilih. Jika jarak baru ini lebih pendek daripada jarak yang diketahui sebelumnya, perbarui jarak tersebut.
+4. Tandai Node sebagai Dikunjungi: Setelah memperbarui jarak untuk semua tet
+angga, tandai node terpilih sebagai dikunjungi.
+5. Ulangi: Ulangi langkah 2 hingga semua node telah dikunjungi atau jarak terpendek ke semua node telah ditemukan.
+
+contoh implementasi djikstra dalam c++:
+
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <limits>
+using namespace std;
+const int INF = numeric_limits<int>::max();
+
+
