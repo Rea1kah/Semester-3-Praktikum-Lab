@@ -1,0 +1,22 @@
+1. Sequential/Linear Search
+=> Metode pencarian data dengan cara memeriksa setiap elemen dalam suatu struktur data satu per satu hingga ditemukan elemen yang dicari atau seluruh elemen telah diperiksa.
+
+2. Iterative Binary Search
+=> Metode pencarian data yang hanya dapat digunakan pada struktur data yang sudah terurut. Proses pencarian dilakukan dengan membagi dua bagian dari data secara berulang hingga elemen yang dicari ditemukan atau tidak ada lagi bagian yang dapat dibagi.
+
+=> Divide and Conquer
+
+3. Recursive Binary Search
+=> Metode pencarian data yang menggunakan pendekatan rekursif, yaitu memanggil fungsi pencarian itu sendiri dengan parameter yang diperbarui hingga elemen yang dicari ditemukan atau tidak ada lagi elemen yang dapat diperiksa.
+
+=> Manggil fungsi sendiri
+
+4. Interpolation Search
+=> Metode pencarian data yang mirip dengan binary search, tetapi menggunakan perkiraan posisi elemen yang dicari berdasarkan nilai elemen tersebut. Metode ini lebih efisien pada data yang terdistribusi secara merata.
+
+=> Nebak posisi, data berurutan dan terdistribusi merata
+
+5. Exponential Search
+=> Metode pencarian data yang menggabungkan konsep binary search dengan pencarian eksponensial. Proses dimulai dengan mencari rentang di mana elemen yang dicari mungkin berada, kemudian melakukan binary search pada rentang tersebut.
+
+=> Cari rentang dulu, lalu binary Search
